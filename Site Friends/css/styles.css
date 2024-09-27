@@ -1,0 +1,138 @@
+body{
+  font-size: 17px;
+  font-family: 'Lucida Sans';
+  /*background-color: rgb(238, 238, 238);*/
+  /*color:white;*/
+  background-image: url(https://i.pinimg.com/564x/a6/4c/44/a64c4426bea7d0c26d75aa0dab135f70.jpg);
+}
+
+/*conteiner principipal do site*/
+.container{
+  border-radius: 20px;
+  max-width: 1200px;
+  position: relative;
+  margin: 15px auto;
+  padding: 12px 12px ;
+  background-color: rgb(167, 88, 185);
+}
+
+
+/*conteiner de biografia*/
+.biography-container{
+  text-align: center;
+  padding: 25px 0;
+  margin: 0px 0;
+}
+/*citações*/
+.quotes-container {
+  border-radius: 20px 70px 20px 70px;
+  font-size: 22px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  flex-grow: 1;
+  margin-right: 300px;
+  background-image: linear-gradient(to right, #c370ca 30% , rgb(167, 88, 185));
+
+}
+footer{
+  text-align: center;
+}
+.featured-image {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: -15px;
+  flex-grow: 1;
+}
+
+a{
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.figura-conteiner-flex{
+  text-align: center;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.displeyflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards{
+  position: relative;
+  width: 320px;
+  height: 480px;  
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.cards:hover .flip{
+  transform: rotateY(180deg);
+}
+
+.flip{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 1.0s
+}
+
+.frente, .tras{
+  position: absolute;
+  width:320px;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
+  backface-visibility: hidden;
+}
+
+.frente{
+  background-image: url();
+  background-size: cover;
+}
+.tras{
+  background-color: #c370ca;
+  transform: rotateY(180deg);
+  font-size: 20px;
+
+}
+
+.cards .flip .tras h1 {
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.cards .flip .tras ul{
+  text-align: left;
+}
+
+.borda{
+  margin: 10px;
+  border-bottom: 3px groove #000000;
+}
+/*curiosidades*/
+.curiosities-container {
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
+.curiosities-flex{
+  text-align: center;
+  max-width: 370px;
+  margin: 12px;
+  border-radius: 10px;
+  background-color:#c370ca;
+  flex-direction: column;
+}
+
